@@ -403,3 +403,36 @@ h1,h2,h3{ font-family:"Fraunces", Georgia, serif; font-weight:600; line-height:1
 
 /* focus visibility */
 a:focus-visible, button:focus-visible{ outline:3px solid var(--gold-light); outline-offset:3px; border-radius:6px; }
+
+/* ===== mobile menu: Back button + collapsible Contact + hero crop ===== */
+.mm-close{
+  position:absolute; top:20px; left:22px;
+  display:flex; align-items:center; gap:8px;
+  background:transparent; border:0; cursor:pointer;
+  color:var(--cream); font:inherit; font-weight:800; font-size:1rem; padding:6px 4px;
+  transition:color .2s var(--ease);
+}
+.mm-close i{ font-size:.95rem; }
+.mm-close:hover{ color:var(--gold-light); }
+
+.mobile-menu .mm-contact-toggle{
+  display:flex; align-items:center; gap:12px; width:100%;
+  background:transparent; border:0; cursor:pointer; text-align:left;
+  padding:16px 6px; font:inherit; font-weight:700; font-size:1.04rem; color:var(--cream);
+  transition:color .2s var(--ease), padding-left .25s var(--ease);
+}
+.mobile-menu .mm-contact-toggle > i:first-child{ color:var(--gold-light); width:22px; text-align:center; }
+.mobile-menu .mm-contact-toggle:hover{ color:var(--gold-light); padding-left:14px; }
+.mm-chev{ margin-left:auto; font-size:.85rem; transition:transform .3s var(--ease); }
+.mm-contact-toggle.open .mm-chev{ transform:rotate(180deg); }
+
+.mm-contact{
+  max-height:0; overflow:hidden; padding-top:0; padding-bottom:0;
+  transition:max-height .32s var(--ease), padding .32s var(--ease);
+}
+.mm-contact-toggle.open + .mm-contact{ max-height:140px; padding-bottom:14px; }
+
+@media (max-width: 560px){
+  .hero-img{ height:132%; bottom:auto; }        /* crop more off the bottom on phones */
+  .hero-content{ transform:translateY(-18px); }  /* nudge the hero text up */
+}
