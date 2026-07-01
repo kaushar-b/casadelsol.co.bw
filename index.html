@@ -44,12 +44,18 @@
   <!-- ================= SLIDE-OUT MENU ================= -->
   <div class="menu-overlay" id="menuOverlay"></div>
   <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <button type="button" class="mm-close" aria-label="Close menu">
+      <i class="fa-solid fa-arrow-left"></i> Back
+    </button>
     <a href="#top"><i class="fa-solid fa-house"></i> Home</a>
     <hr>
     <a href="#about"><i class="fa-solid fa-leaf"></i> About Us</a>
     <hr>
-    <a href="#find-us"><i class="fa-solid fa-location-dot"></i> Contact</a>
-    <div class="mm-contact">
+   <button type="button" class="mm-contact-toggle" aria-expanded="false" aria-controls="mmContact">
+      <i class="fa-solid fa-location-dot"></i> Contact
+      <i class="fa-solid fa-chevron-down mm-chev"></i>
+    </button>
+    <div class="mm-contact" id="mmContact">
       <div><i class="fa-solid fa-phone"></i> +267 74 794 929</div>
       <div><i class="fa-solid fa-envelope"></i> contact@casadelsol.co.bw</div>
     </div>
