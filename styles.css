@@ -146,7 +146,7 @@ h1,h2,h3{ font-family:"Fraunces", Georgia, serif; font-weight:600; line-height:1
    HERO
    ===================================================================== */
 .hero{ position:relative; min-height:min(86vh,720px); display:grid; place-items:center; overflow:hidden; }
-.hero-img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.hero-img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 35%; }
 .hero::after{
   content:""; position:absolute; inset:0;
   background:linear-gradient(180deg, rgba(94,12,17,.34) 0%, rgba(94,12,17,.58) 100%);
@@ -310,12 +310,13 @@ h1,h2,h3{ font-family:"Fraunces", Georgia, serif; font-weight:600; line-height:1
    FOOTERS
    ===================================================================== */
 .footer-thin{
-  background:var(--char); color:var(--cream);
+  background:#ECECEC; color:var(--char);
   display:flex; align-items:center; justify-content:center; gap:12px;
   padding:14px 16px; font-size:.9rem; letter-spacing:.04em;
+  border-top:1px solid #dcdcdc;
 }
 .footer-thin img{ width:26px; height:26px; }
-.footer-thin b{ color:var(--gold-light); font-weight:700; }
+.footer-thin b{ color:var(--red); font-weight:800; }
 
 .footer-main{ background:var(--red-deep); color:var(--cream); text-align:center; padding:60px 0 30px; }
 .footer-main .f-logo{ width:74px; height:74px; margin:0 auto 18px; }
