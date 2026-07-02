@@ -279,7 +279,7 @@ h1,h2,h3{ font-family:"Fraunces", Georgia, serif; font-weight:600; line-height:1
   transition:transform .25s var(--ease), background .25s var(--ease);
 }
 .store-btn:hover{ transform:translateY(-4px); background:var(--char); }
-.store-btn i{ font-size:1.9rem; color:var(--gold-light); }
+.store-btn i{ font-size:1.9rem; color:#fff; }
 .store-btn .st{ display:flex; flex-direction:column; line-height:1.15; }
 .store-btn .st small{ font-size:.66rem; text-transform:uppercase; letter-spacing:.12em; opacity:.85; }
 .store-btn .st b{ font-size:1.02rem; font-family:"Fraunces",serif; font-weight:600; }
@@ -303,7 +303,7 @@ h1,h2,h3{ font-family:"Fraunces", Georgia, serif; font-weight:600; line-height:1
 .info-row p{ margin:0; color:var(--char-soft); font-size:.98rem; }
 .info-row a{ color:var(--char-soft); }
 .info-row a:hover{ color:var(--red); }
-.hours-line{ display:flex; justify-content:space-between; gap:14px; font-size:.96rem; color:var(--char-soft); }
+.hours-line{ display:flex; gap:10px; font-size:.96rem; color:var(--char-soft); white-space:nowrap; }
 .hours-line span:last-child{ font-weight:700; color:var(--char); }
 
 /* =====================================================================
